@@ -1,0 +1,430 @@
+   <!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Portfolio Website</title>
+    <link rel="icon" href="robot.png" type="image/*">
+     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#f2eae0 ;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: top center;
+            background-image: url("Screenshot 2025-07-26 220751.png");
+            background-size: 100% 900px;    
+             background-repeat: no-repeat;
+            background-position: top;
+            background-color:whitesmoke;
+        }
+
+        .marquee-container {
+            height: 180px;
+        }
+
+        .marquee-container img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            margin-top: 30px;
+            margin-left: 400px;
+        }
+       
+
+        .Landing_Page {
+            background-color:#0b0909;
+            opacity: 0.8;
+            padding: 70px;  
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 0px;
+            border-radius: 10px;
+            max-width: 900px;
+        }
+
+        h1, h2, p h3{
+            margin: 10px 0;
+            transition: font-size 1.5s ease, color 1.5s ease, opacity 1.5s ease;
+        }
+
+        .transition3:hover h1 {
+            font-size: 50px;
+            color:#d50032;
+        }
+
+        .transition3:hover h2 {
+            font-size: 25px;
+            color:#266ca9;
+            opacity: 0.8;
+        }
+
+        .transition3:hover p {
+            font-size: 22px;
+            color:#00a600;
+            opacity: 1;
+        }
+        .transition3:hover h3{
+            font-size:30px;
+            color:white;
+            opacity: 0.7;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: rgba(0, 0, 210);
+            opacity: 0.7;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: rgba(0, 0, 150);
+            opacity: 0.6;
+        }
+
+        p {
+            font-size: 18px;
+            opacity: 0.8;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        h3{
+            font-size:20px;
+            color:black;
+        }
+        .buttonshape{
+            width: 1200px;
+            margin:20px;
+            padding: 10px;   
+        }
+        .button{
+            border:4px solid #FF2B00;  
+            background-color: rgba(0, 0, 0, 0.3);
+            width:200px;
+            height:70px;
+            margin:10px;
+            padding: 12px;
+            transition-property:background-color;
+	        transition-duration:0.5s;
+	        transition-timing-function:easy;
+        }
+        .button:hover{
+            background-color:#ADD8E6;
+        }
+
+        .btn3{
+            margin-left: 10px;;
+            color:#ffffff;  
+        }
+        .btn5{
+            margin-left: 280px;
+            float: center;
+            color:#ffffff;
+            
+        }
+        .btn7{
+            margin-left: 270px;
+            color:#ffffff;
+        }
+        .Projects{
+            border:2px solid black;
+            margin-right: 930px;
+        }
+        .Projects2{
+            border:2px solid black;
+            margin-top: -200px;
+        }
+        .Projects3{
+            border:2px solid black;
+            margin-top: -200px;
+            margin-left:900px;
+        }
+        .Heading1{
+            margin-right: 990px;
+        }
+        .Heading2{
+            margin-top:-70px;
+        }
+        .Heading3{
+            margin-top: -70px;
+            margin-left:900px;
+        }
+        .Myprofile
+        {
+            border:2px solid black;
+            margin-right: 900px;
+        }
+        .Profile{
+            margin-top: 0px;
+            margin-right: 990px;
+        }
+        .Details{
+            margin-top: -280px;
+            margin-left:400px;
+        }
+        .contact{
+            margin-right: 920px;;
+            margin-top: -500px;
+        }
+        .icon{
+            color:yellowgreen;
+            margin-top:-18px;
+            margin-right: 1200px;
+        }
+        .icon2{
+              margin-top:20px;
+            margin-right: 1200px;
+
+        }
+        .mobileno{
+            margin-top:-20px;
+            margin-right: 1000px;
+        }
+        .instagram{
+            color:black;
+            margin-top:20px;
+            margin-right: 1000px;
+        }
+        .instaicon{
+            margin-top:-17px;
+            margin-right: 1200px;
+        }
+        .audio{
+            margin-right:900px; ;
+        }
+        .audio1{
+               margin-top:-70px;
+            margin-right: 850px;
+        }
+        .video{
+            margin-left: 400px;
+        }
+        .videotext{
+            margin-top:-200px;
+            margin-right: 850px;
+        }
+        .linkedin{
+            margin-top:30px;
+            margin-right:1030px;
+        }
+        .linkedinicon{
+            color:black;
+             margin-top:-15px;
+            margin-right:1200px;
+
+        }
+        .Border1{
+            border: 2px solid black;
+            width:400px;
+            height:530px;
+            margin-left:500px;
+            margin-top:40px;
+            
+        }
+        .Label1{
+            font-size: 20px;
+            font-weight:bolder;
+            margin-top:60px;
+            margin-left:20px;
+        }
+        .input1{
+            margin-top:15px;
+            margin-left:20px;
+
+        }
+        .Label2{
+            font-size: 20px;
+            font-weight:bolder;
+            margin-top:50px;
+            margin-left:20px;
+        }
+        .input2{
+            margin-top:15px;
+            margin-left:20px;
+
+        }
+        .Label3{
+            font-size: 20px;
+            font-weight:bolder;
+            margin-top:40px;
+            margin-left:10px;
+        }
+        .input3{
+            margin-top:15px;
+            margin-left:20px;
+
+        }
+        .Label4{
+            font-size: 20px;
+            font-weight:bolder;
+            margin-top:40px;
+            margin-left:10px;
+        }
+        .select{
+            margin-top:-20px;
+            margin-left:230px;
+
+        }
+        .register{
+            border:2px solid black;
+            width:57px;
+            margin-top:40px;
+            margin-left:-60px;
+        }
+        .top{
+
+            margin-top:100px;
+        }
+</style>
+</head>
+<body>
+<div>
+    <div class="marquee-container">
+        <marquee direction="up">
+            <img src="—Pngtree—computer virus shield web protection_15097718.png" alt="Profile Image">
+        </marquee>
+    </div>
+
+    <div class="Landing_Page">
+        <div class="transition3">
+            <h1>Hey! I am Deepak Jindal</h1>
+            <h2>I am a CyberSecurity Professional</h2>
+            <p>Hello Everyone, I am Deepak Jindal. I'm a commerce student in 11th grade with a strong passion for both business and technology. I enjoy coding in HTML, CSS, Python, Java, and C. I also value leadership and networking. In my free time, I love reading books, playing cricket, and watching Formula 1 racing.</p>
+            <h3>Scroll Down to visit  Full website (↓)</h3>        
+        </div>
+    </div>
+</div>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+    
+<div class="buttonshape">
+    <button  class = "button btn3" onclick="location.href='#About Us'"><b>About Us</b></button>
+    <button class = "button btn5" onclick="location.href='#Our Courses  '"><b>Courses</b></button>
+    <button class = "button btn7" onclick="location.href='#Contact Us'"><b>Contact us</b> </button>
+</div>
+<br></br>
+<br></br>
+<br></br>
+<h1 id = "Our Courses">Our Courses</h1>
+<br></br>
+<br></br>
+<br></br>
+<div class = "Projects"> 
+    <button onclick="window.location.href='https://www.w3schools.com/html/html_css.asp';">
+    <img src = "Screenshot 2025-07-23 135120.png" width="300px" height = "200px">
+</button>
+</div>
+ <div class="Projects2">
+  <button onclick="window.location.href='https://www.w3schools.com/cybersecurity/';">
+    <img src="Screenshot%202025-07-26%20134214.png" width="300px" height="200px" />
+  </button>
+</div>
+</div>
+<div class = "Projects3">
+    <button onclick="window.location.href='https://www.w3schools.com/python/';">
+    <img src = "Screenshot 2025-07-26 135808.png" width = "300px" height = "200px">
+    </button>
+</div>
+<br></br>
+<div class = "Heading1"><h1><font color = "black" face = "calibri">(HTML/CSS)</font></h1></div>
+<div class = "Heading2"><h1><font color = "black" face = "calibri">(CyberSecurity)</font></h1></div>
+<div class = "Heading3"><h1><font color = "black" face = "calibri">(Python)</font></h1></div>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<h1 id = "About Us">About US</h1>
+<br></br>
+<br></br>
+<br></br>
+<div class = "Myprofile">
+    <img src = "Myphoto.png" width = "320px" height = "300px"></img>
+</div>
+<div class = "Details">
+    <p><b>Hello! I'm Deepak Jindal, a passionate 11th-grade commerce student with a keen interest in the dynamic worlds of business and technology. I enjoy blending analytical thinking with creativity, whether it's through coding, collaborating on ideas, or exploring leadership opportunities.
+
+I have hands-on experience in multiple programming languages, including HTML, CSS, Python, Java, and C, which allows me to build and experiment with various tech projects. Alongside academics, I’m deeply committed to developing my skills in leadership and networking, always eager to connect, learn, and grow with like-minded individuals.
+
+When I’m not immersed in school or coding, you'll find me reading insightful books, playing cricket, or enjoying the thrill of Formula 1 racing.
+
+I believe in continuous learning and aspire to bridge the gap between commerce and technology through innovation and collaboration.</b></p>
+</div>
+<br></br>
+<div class = "Profile"><h1><font color = "black" face = "calibri">My Profile</font></h1></div>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<h1 id = "Contact Us">Contact US</h1>
+<div class = "Border1">
+    <h1><i><font = "10" color = "black">Registration Form</font></i></h1>
+    <div class = "Label1"><label for = "name"><b>Full Name :</b></label></div>
+    <div class = "input1"><input type = "name" placeholder="Enter Your Name" id = "name" for = "name" ></div>
+    <div class = "Label2"><label for = "Email"><b>Email :</b></label></div>
+    <div class = "input2"><input type = "name" placeholder="Enter Your Email" id = "Email" for = "Email" ></div>
+    <div class = "Label3"><label for = "tel"><b>Mobile Number :</b></label></div>
+    <div class = "input3"><input type = "tel" placeholder="Enter Your Mobile Number" id = "tel" for = "tel" maxlength="10" ></div>
+    <div class = "Label4"><label for = "Select your Course">Select your Course :</label></div>
+<div class = "select"><select name = "Select your Course" id = "Select your Course" value = "Select your Course">
+<option value = "HTML/CSS">HTML/CSS</option>
+<option value = "CyberSecurity">CyberSecurity</option>
+<option value = "Python">Python</option>
+</select>
+<div class = "register"><button type = "submit" value = "submit">Submit</button></div>
+</div>
+</div>
+<div class = "contact"><a href = "https://mail.google.com/mail/?view=cm&to=deepakjindal265@gmail.com" target = "_blank"><font color = "black" size = "3"><b>deepakjindal265@gmail.com</b></a></font></div>
+<div class = "icon"><i class="fa-solid fa-envelope"></i></div>
+<div class = "icon2"><i class="fa-solid fa-phone"></i></div>
+<div class = "mobileno"><li>+9356415446</li></div>
+<div class = "instagram">
+    <a href  = "https://www.instagram.com/deepakjindal406" target="_blank"><font color = "black" size = "3"><b>Instagram Profile</b></font></a></div>
+<div class = "instaicon"><i class="fa-brands fa-square-instagram"></i></div>
+<div class = "linkedin"><a href = "https://www.linkedin.com/in/deepak-jindal-b83800316/" target = "_blank"><font color = "black" size = "3"><b>linkedin Profile</b></font></a></div>
+<div class = "linkedinicon"><i class="fa-brands fa-linkedin"></i></div>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<h1>Some Audio and Video Tips</h1>
+<br></br>
+<br></br>
+<br></br>
+<div class audio>
+<audio controls autoplay muted loop>
+<source src = "Audio4.mp3" type = "audio/mp3">
+</audio>
+</div>
+<div class = audio1>
+    <h1><font  color = "black"><b>Cyber Awareness Audio</b></font></h1>
+</div>
+<br></br>
+<br></br>
+<div class = "video"><iframe width="740" height="360" src="https://www.youtube.com/embed/7FdepARTeVg"   allowfullscreen>
+</iframe>
+</div>
+<div class = "videotext"><h1><font color = "black" font = "calibri"><b>CyberSecurity Video</b></font></h1></div>
+<br></br>
+<br></br>
+<div class = "top"><a href = "#top">Click on this button to go to top</a></div>
+</body>
+</html>
+
